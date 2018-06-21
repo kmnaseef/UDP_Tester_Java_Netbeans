@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="256.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="udp.test.UdpController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="169.0" layoutX="13.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="230.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="169.0" layoutX="12.0" layoutY="205.0" stroke="BLACK" strokeType="INSIDE" width="230.0" />
+      <Button fx:id="sendbutton" layoutX="165.0" layoutY="59.0" mnemonicParsing="false" onAction="#send" prefHeight="56.0" prefWidth="62.0" text="SEND" />
+      <TextField fx:id="sendip" layoutX="22.0" layoutY="58.0" prefHeight="26.0" prefWidth="133.0" promptText="IP Address" text="192.168.100.6" />
+      <TextField fx:id="sendport" layoutX="23.0" layoutY="90.0" prefHeight="26.0" prefWidth="133.0" promptText="Port" text="7500" />
+      <TextField fx:id="hostip" layoutX="25.0" layoutY="241.0" prefHeight="26.0" prefWidth="133.0" promptText="Host IP" />
+      <TextField fx:id="hostport" layoutX="25.0" layoutY="275.0" prefHeight="26.0" prefWidth="133.0" promptText="Host Port" />
+      <Button fx:id="clearbutton" layoutX="166.0" layoutY="275.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="CLEAR" />
+      <TextField fx:id="listenport" layoutX="166.0" layoutY="241.0" prefHeight="26.0" prefWidth="62.0" promptText="Listen" text="43000" />
+      <TextArea fx:id="sendmsg" layoutX="22.0" layoutY="126.0" prefHeight="48.0" prefWidth="205.0" promptText="Enter Message here.." text="Hi..." />
+      <Label layoutX="23.0" layoutY="30.0" prefHeight="26.0" prefWidth="74.0" text="Send" />
+      <TextArea fx:id="rcvmsg" layoutX="24.0" layoutY="311.0" prefHeight="48.0" prefWidth="205.0" promptText="Message received." />
+      <Label layoutX="26.0" layoutY="218.0" text="Receive" />
+      <Label fx:id="localiplabel" layoutX="156.0" layoutY="6.0" prefHeight="17.0" prefWidth="87.0" text="Local IP" />
+   </children>
+</AnchorPane>
